@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Auxilliiary'
+import Aux from '../../hoc/Auxilliary/Auxilliiary'
 import Burger from '../../components/Burger/Burger';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls'
 import Modal from '../../UI/Modal/Modal';
@@ -68,6 +68,7 @@ class BurgerBuilder extends Component {
 
     removeIngredientHandler = (type) => {
         const oldCount = this.state.ingredients[type];
+        
         if(oldCount <= 0) {
             return;
         }
